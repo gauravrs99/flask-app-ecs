@@ -1,2 +1,2 @@
-# flask-app-ecs
-Simple flask app to be run on ECS
+# flask-app
+Simple flask app to be run on Artifact-Registry
