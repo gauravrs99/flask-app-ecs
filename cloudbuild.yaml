@@ -1,0 +1,8 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "REGION-docker.pkg.dev/$PROJECT_ID/flask-repo/flask-app", "."]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "REGION-docker.pkg.dev/$PROJECT_ID/flask-repo/flask-app"]
+images:
+  - "REGION-docker.pkg.dev/$PROJECT_ID/flask-repo/flask-app"
+
